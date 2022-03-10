@@ -1,0 +1,462 @@
+ Q What are the topics/concepts we are going to cover in this training?
+ A Java and DBMS
+ Q Why we should learn Java?
+ A Widely used language. Object oriented language. popular programming language.
+ Q Why we should Database?
+ A Managing data . To store data. accessing the data. 
+ Q So what about Security aspects related to the application which we are using on daily basis?
+ A Cyber security
+ * Cloud computing 
+-----------------------------------------------------------------------------------------------------
+17 days
+ Q From where we are going to learn these concepts?
+ A Lex
+ Q What IDE ( Integrated Development Environment which helps in  writing a program, debugging a
+  program , compiling and executing a program) we are going to use to write our Java program?
+ A Eclipse
+ Q How do I get Eclipse?
+ A Batch owners share the link for the download for the softwares. 
+ Q Can I practice my code in Lex until unless I have installed Eclipse in my system?
+ A Yes we can. 
+-------------------------------------------------------------------------------------------------------
+ Q So are we going to learn the concepts from lex during the training session.
+ A No but the trainer will be using the similar platform as Lex which is called
+   Wingspan. 
+-----------------------------------------------------------------------------------------------------
+class Welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+-------------------------------------------------------------------------------------------------
+STEP 1 
+    class Welcome {}
+ Here class is a keyword to declare a class. Welcome is the name of the class.
+ {}===> this signifies the class start and end or a block.
+--------------------------------------------------------------------------------------------------
+STEP 2
+   class Welcome {
+   public static void main(String[] args) {
+   }
+  }
+Here public static void are the keywords. 
+main is a method/function 
+String is a predefined class of Java API ( Application Programming Interface ===> Library of classes and interfaces in Java)
+[] ====> array
+args ====> Name of the String array
+--------------------------------------------------------------------------------------------------
+STEP3
+    class Welcome {
+   public static void main(String[] args) {
+       System.out.println("Hello World! Welcome to Java Programming!");
+   }
+  }
+
+ System.out.println====> Is used to print something on the console/screen It is similar to 
+ printf() function in C.
+ Heollo World! Welcome to Java Programming! is a string and that is the reason it is enclosed
+ within double quotes(" ").    
+ Every statement should endup with ; . The is the reason we are putting ; after
+ the statement===>System.out.println("Hello World! Welcome to Java Programming!") 
+ ------------------------------------------------------------------------------------------------
+ So something which needs to be taken care of. 
+ keywords are in smallcase like class,public,void,static. If you are writing in any other case
+it will show compilation error.
+ class names start with uppercase. example Welcome, String, System.
+ methods are in smallcase. example main(),println()
+ variables/objects are in smallcase args,out
+---------------------------------------------------------------------------------------------
+JAVA IS CASE SENSITIVE. If with the keywords and class and methods and variables we are following
+the way it should be. It shows compilation error.
+----------------------------------------------------------------------------------------------
+For identifiers ( name of the class, variable and methods ) we cannot have space.
+So writing Hello World will be incorrect. We have to write something as HelloWorld or Hello_World or
+HelloSWorld. 
+---------------------------------------------------------------------------------------------------
+
+  class Hello {
+           // String []args
+  public static void main(String args[]){
+     System.out.println("Hello");
+   }
+}
+
+keywords:- class,public,static,void
+identifers(class name,method name,variable name,interface name)=====> Hello (class created by the user) , String and System ( The classes which are predefined and part of java library ( API )
+methods (main and println() are methods)
+variables/objects ====> args and out
+[]====> array 
+
+I have to write a class. 
+I have write the main method.
+
+----------------------------------------------------------------------------------------------------
+The source code is stored in a java file. Suppose we named the file as Hello.java.
+The extension of the file which is having java code will be java.
+
+Within the file we write the code.
+
+   class Hello {
+    public static void main(String args[]){
+     System.out.println("Welcome to the first session");
+    }
+  }
+----------------------------------------------------------------------------------------------
+If we are not using any online platform or IDE to write our code, we have to manually invoke
+the java compiler. To get the compiler we need to install the Java Development Kit(JDK).  
+   javac <filename>
+   javac Hello.java
+     |
+     |        compiled and converted into bytecode and bytecode is stored in a .class file              (Hello.class)
+     | 
+   java <classname>
+   java Hello  (JRE ( Java Runtime Environment which is the execution environment for the java code)
+     |         Code is converted into the machine level language which can be understood by our system                and output is shown  
+
+     |
+ Welcome to the first session
+-------------------------------------------------------------------------------------------
+ class Welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+		System.out.println("Hi Friends!!!!!!");
+}
+}
+println(); After printing the content it will take the cursor to the new line so that if
+we have some more content to be printed , that content is printed in the next line.
+   Hello World!!!!
+   Hi Friends
+
+ class Welcome {
+	public static void main(String[] args) {
+		System.out.print("Hello World! Welcome to Java Programming!");
+		System.out.println("Hi Friends!!!!!!");
+}
+}
+   Hello World! Welcome to Java Programming!Hi Friends!!!!!!   
+
+
+ class Welcome {
+	public static void main(String[] args) {
+		System.out.print("Hello World! Welcome to Java Programming!\n Hi Friends!!!!!!");
+		
+}
+}
+[ Printing Hello World! Welcome to Java Programming and printing Hi Friends in a new line as
+  Hi Friends is preceeded by \n and after printing Hi Friends cursor remains in the same line of 
+ Hi Friends as we have used print method]
+
+
+class Welcome {
+	public static void main(String[] args) {
+		System.out.print("Hello World! Welcome to Java Programming!\n Hi Friends!!!!!! I am fine \n I am good");
+		
+}
+}
+Hello World! Welcome to Java Programming!
+Hi Friends!!!!!! I am fine
+I am good
+
+
+ class Welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!\n Hi Friends!!!!!!");
+		
+}
+}
+[ Printing Hello World! Welcome to Java Programming and printing Hi Friends in a new line as
+  Hi Friends is preceeded by \n and after printing Hi Friends cursor goes to a new line because of println.]
+
+
+How I can get Eclipse in my system?
+https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2021-12/R/eclipse-inst-jre-win64.exe
+After getting installer , what is the next step?
+A We can install and and Eclipse IDE for Java Developers. So after installation we get a eclipse
+folder and within the folder we get the icon of eclipse application. We can start the application
+by double clicking on the icon.
+
+How to start working on eclipse?
+A after the double click , the workspace dialog box will open. Continue with the default wprkspace.
+(C:\Users\PERSONAL\eclipse-workspace). Click on the launch button. Close the welcome tab.
+
+How I can create a new project?
+A Select the file menu====> New ======> Java Project. 
+Mention the project name(in our case the name is first) and click on finish button.
+It will show a dialog box for module name. Skip creation of module by clicking the button Don't create.
+Ultimately we can see a project folder with the name first in the Package Explorer(package explorer
+will always show a list of project created in the current workspace).
+
+How we can create a new Java file in the newly created project?
+A Right click on the project folder===>New====>class.
+  Delete the package name. 
+  Provide the class name. 
+  Select the main method and proceed.
+  
+  Within the main method, write 
+  syso and press ctrl+spacebar.  syso is the shortcut for System.out.println. 
+  Write something within System.out.println
+  Ctrl+S to save the file.
+  Right click on the editor(The part where you are writing the java code)
+  Run As====> Java Application
+------------------------------------------------------------------------------------------------------
+
+  public class hello {
+   public static void main(String[] args) {
+    System.out.println("Hello");
+  }
+ }
+[Note: We can write our user defined class in smallcase
+though that is not a good practice but the code will
+compile and execute]
+----------------------------------------------------------------------------
+  public class hello {
+   public static void main(string[] args) {
+    system.out.println("Hello");
+   }
+ }
+[In the above code it will show compilation error as we are writing String class as string
+and System class as system. As these classes are predefined and part of Java API, 
+we cannot write them in any case we want. It has to follow the convention of writing the first 
+character in uppercase.]
+---------------------------------------------------------------------------------------
+Q Can we have something which can store a value and the value can be changed depending on the
+requirement?
+A yes. We can declare a variable. They are called variables because they can store different
+  values. 
+Q How it will be decided that what kind of value we can store in a variable?
+A We go for the datatype.
+Example if we want to store a variable with number we declare as
+ 
+   int num;
+   [Note: int is a datatype and num is the variable]
+
+ class Data {
+   public static void main(String[] args) {
+     int num;    // We have declared num variable of int data type
+     num=10; // The num variable is assigned the value 10
+     System.out.println(num);      //10 show me the value stored in the variable num which is 10
+     System.out.println("num");    //num as num is within quotes , it is interpreted as string
+    }
+  }   
+--------------------------------------------------------------------------------------------------
+class Data2 {
+   public static void main(String[] args) {
+     int num;    
+     num=10;  // = is an assignment operator where the value which is in the RHS is assigned to 
+     // the entity or the variable which is on LHS
+     System.out.println(num);     
+     num=20;
+     System.out.println(num);  
+    }
+  }   
+
+---------------------
+double totalPrice = 200;
+[Note: when a variable name or method name consists of multiple words , the second word onwards
+we make the first character in upperCase example totalPrice, employeeName, employeeId.]
+---------------------------------------------------------------------------------------------------
+In java we have 8 primitive datatypes:-
+* char ( Storing a character)
+( Storing a whole number)
+* byte
+* short
+* int
+* long
+( Storing decimal values)
+* float
+* double
+( boolean data like true or false)
+* boolean 
+--------------------------------------------------------------------------------------
+class Demo3 {
+  public static void main(String args[]) {
+   int num=10; // We have declared the variable num which is of type int and we initialised it with the value 10
+  System.out.println(num);
+ }
+}
+
+---------------------
+int NUM; but this not same as
+int num;
+
+We have two types of data types:
+1) Primitive===> char,byte,short,int,long,float,double and boolean
+2) Non Primitive==> arrays, classes, interfaces
+
+-----------------------------------------------------------------------------------
+// StudentDetails contain two words. In the classname if we have multiple words. Every word
+// starts with uppercase. So in StudentDetails. S(uppercase)tudentD(uppercase)etails
+class StudentDetails{
+   public static void main(String args[]){
+     int roll=1;
+     String name="Ashok";
+     int marks=100;
+     char grade='A';
+     System.out.println(roll);
+     System.out.println(name);
+     System.out.println(marks);
+     System.out.println(grade);
+    }
+  }
+---------------------------------------------------------------------
+class StudentDetails2{
+   public static void main(String args[]){
+     int roll=1;
+     String name="Ashok";
+     int marks=100;
+     char grade='A';
+     System.out.println("ROLL:"+roll);
+     System.out.println("NAME: "+name);
+     System.out.println("MARKS: "+marks);
+     System.out.println("GRADE: "+grade);
+    }
+  }
+------------------------------------------------------------------------------------------------------
+class EmployeeDetails {
+   public static void main(String args[]) {
+     int id=1;
+     System.out.println(id);
+   }
+ }
+---------------------------------------------------------------------------------------------------
+
+class CommentDemo {
+public static void main(String args[]) {
+	/*
+	  Given below is a variable age 
+      and a print statement to print age
+	 */
+	int age = 25;
+	System.out.println(age);
+}
+}
+----------------------------------------------------------------------
+class OperatorDemo1 {
+  public static void main(String args[]) {
+ 
+   int num=10;
+   System.out.println(num); //10
+   num++; // num=num+1;
+   // post increment
+   System.out.println(num); //11
+  }
+}
+
+class OperatorDemo2 {
+  public static void main(String args[]) {
+ 
+   int num=10;
+   System.out.println(num); //10
+   ++num; // num=num+1;
+   // pre increment
+   System.out.println(num); //11
+  }
+}
+
+class OperatorDemo3 {
+  public static void main(String args[]) {
+ 
+   int num=10;
+   System.out.println(num); //10
+   int num2=num++; // num2=num; num=num+1;
+   // as it is post increment, so the value of num is first assigned to num2 and then it is incremented  
+   System.out.println(num2); //10
+   System.out.println(num);  //11
+  }
+}
+
+class OperatorDemo4 {
+  public static void main(String args[]) {
+ 
+   int num=10;
+   System.out.println(num); //10
+   int num2=++num; //  num=num+1; num2=num;
+   // as it is post increment, so the value of num is first assigned to num2 and then it is incremented  
+   System.out.println(num2); //11
+   System.out.println(num);  //11
+  }
+}
+
+class OperatorDemo5 {
+  public static void main(String args[]) {
+    boolean b1=false;
+    boolean b2=true;
+    System.out.println(b1); // false
+    System.out.println(!b1); // true
+    System.out.println(b2); // true
+    System.out.println(!b2); //false
+  }
+}
+----------------------------------------------
+
+class OperatorDemo6{
+public static void main(String args[]) {
+	int numOne = 10;
+	int numTwo = 5;
+	System.out.println(numOne + numTwo); //Output will be 15
+	System.out.println(numOne - numTwo); //Output will be 5
+	System.out.println(numOne * numTwo); //Output will be 50
+	System.out.println(numOne / numTwo); //Output will be 2
+	System.out.println(numOne % numTwo); //Output will be 0
+}
+}
+
+
+class OperatorDemo7 {
+   public static void main(String args[]) {
+   int num1=1;   // = is assignment operator
+   int num2=2;
+   System.out.println(num1==num2); // == is comparison operator  false
+   System.out.println(num1>num2);  // false
+   System.out.println(num1!=num2); // true
+   System.out.println(num1<num2);  // true
+   System.out.println(num1>=num2); // false
+   System.out.println(num1<=num2); //  true 
+   }
+ } 
+
+class OperatorDemo8 {
+   public static void main(String args[]) {
+   int num1=1;
+   int num2=2;
+   int num3=3;
+   System.out.println(num2>num1 && num3>num2);   // true
+   System.out.println(num2>num1 || num3>num2);  // true
+   System.out.println(num1>num2  && num3>num2);  // false && true===> false
+   System.out.println(num1>num2  || num3>num2); //  false || true ===> true
+   System.out.println(num1>num2  && num2>num3);  // false && false==> false
+   System.out.println(num1>num2  || num2>num3);  // false || false ===> false
+  }
+ } 
+
+
+class OperatorDemo9{
+
+public static void main(String args[]) {
+	int numOne = 10;
+	int numTwo = 5;
+	int min = (numOne < numTwo) ? numOne : numTwo;
+	System.out.println(min); //Output will be 5
+}
+}
+
+class Operator10{
+
+public static void main(String args[]) {
+	int numOne = 10; //The value 10 is assigned to numOne
+	System.out.println(numOne); //Output will be 10
+	numOne += 5;  // numOne=numOne+5;
+	System.out.println(numOne); //Output will be 15
+	numOne -= 5;   // numOne=numOne-5;
+	System.out.println(numOne); //Output will be 10
+	numOne *= 5;   // numOne=numOne*5;
+	System.out.println(numOne); //Output will be 50
+	numOne /= 5;   // numOne=numOne/5;
+	System.out.println(numOne); //Output will be 10
+}
+}
+
+
+2+2*5
+2+10
+12
